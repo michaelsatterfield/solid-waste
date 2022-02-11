@@ -22,8 +22,13 @@ export default function SearchBar() {
     <div className="searchContainer">
       {/* <img alt={'What Goes Where?'} className="searchImage" src={banner_img} /> */}
       <Autocomplete
-        freeSolo
-        id="free-solo-2-demo"
+          onKeyDown={(event) => {
+              if (event.key === 'Enter') {
+                  event.defaultMuiPrevented = true;
+              }
+          }}
+        disablePortal
+        id="combo-box-demo"
         disableClearable
         options={context.materials}
         filterOptions={filterOptions}
