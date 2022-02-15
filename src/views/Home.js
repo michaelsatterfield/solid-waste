@@ -54,9 +54,6 @@ export default function Home() {
       {/*    {context.categories.length >= 12 ? "See All" : ""}*/}
       {/*  </p>*/}
       {/*</div>*/}
-
-
-
     </div>
   );
 }
