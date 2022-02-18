@@ -5,10 +5,7 @@ import Category from './Category'
 import Material from './Material'
 // import NotFound from "../components/NotFound";
 
-
-
 const Main = () => (
-
     <main>
         <Switch>
             <Route exact path="/" component={Home} />
