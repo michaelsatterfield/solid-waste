@@ -15,7 +15,6 @@ function App() {
         <Router>
             <Switch>
                 <Route exact path="/material/undefined" component={NotFound}/>
-
                 <MyProvider>
                     <Header />
                     <Main />
@@ -23,7 +22,6 @@ function App() {
             </Switch>
          </Router>
     )
-
 }
 
 export default App
