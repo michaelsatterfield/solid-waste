@@ -3,7 +3,6 @@ import { Switch, Route} from 'react-router-dom'
 import Home from './Home'
 import Category from './Category'
 import Material from './Material'
-// import NotFound from "../components/NotFound";
 
 const Main = () => (
     <main>
