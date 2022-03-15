@@ -26,11 +26,8 @@ export default function Material(props) {
       return obj.id === material.category;
     });
 
-    //todo: add error handing to async await, possibly rewrite code with try catch block..or add axios api to handle promise;
     setMaterial(material);
     setCategory(category);
-
-    // console.log(getMaterial())
   };
   return (
     <div style={{ paddingTop: "1px", paddingBottom: "134px" }}>
@@ -47,7 +44,10 @@ export default function Material(props) {
         </p>
       </div>
       <div className="material_content">
-        <p className="waste_type_title">{material.name}</p>
+        <p className="waste_type_title">
+          <div dangerouslySetInnerHTML={{ __html: material.name }}></div>
+          {/* {material.name} */}
+        </p>
         <img
           alt="material"
           className="material_image"

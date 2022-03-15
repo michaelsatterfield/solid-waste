@@ -57,7 +57,7 @@ export default class MyProvider extends Component {
           getCategories: () => this.getCategories(),
         }}
       >
-        {this.props.children}
+       {this.props.children}
       </MyContext.Provider>
     )
   }
