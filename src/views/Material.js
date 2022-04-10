@@ -53,7 +53,12 @@ export default function Material(props) {
           className="material_image"
           src={material.image || test_image}
         />
-        <p className="material_description">{category.instructions}</p>
+        <p className="material_description">
+          <div
+            dangerouslySetInnerHTML={{ __html: category.instructions }}
+          ></div>
+          {/* {category.instructions} */}
+        </p>
         {category.depots?.length ? (
           <Accordion style={{ background: "#f2f2f2", marginBottom: "23px" }}>
             <AccordionSummary
